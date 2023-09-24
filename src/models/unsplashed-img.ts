@@ -7,5 +7,5 @@ export interface UnsplashImage {
         raw: string,
     },
     width: number,
-    heigth: number,
+    height: number,
 }
