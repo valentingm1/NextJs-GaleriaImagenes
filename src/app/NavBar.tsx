@@ -18,6 +18,7 @@ export default function Navegacion(){
                     <Nav>
                         <Nav.Link as={Link} href="/static" active={pathname === "/static"}>Estático</Nav.Link>
                         <Nav.Link as={Link} href="/dynamic" active={pathname === "/dynamic"}>Estático</Nav.Link>
+                        <Nav.Link as={Link} href="isr" active={pathname === "/isr"}>ISR</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
