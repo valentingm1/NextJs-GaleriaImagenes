@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Alert } from "@/components/bootstrap";
 import { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: "Imágenes Estáticas - Next 13.4 | Galería de Imágenes",
 };
@@ -21,7 +22,7 @@ export default async function Page() {
     <div className="d-flex flex-column align-items-center">
       <Alert>
         Esta página{" "}
-        <strong><a href="https://nextjs.org/docs/app/building-your-application/rendering/server-components#static-rendering-default" target="_blank">
+        <strong><a href="https://nextjs.org/docs/app/building-your-application/rendering/server-components#static-rendering-default" target="_blank" className="anchor">
           trae(fetch) datos desde una API y almacena en caché los datos al
           compilar.
         </a></strong>{" "}

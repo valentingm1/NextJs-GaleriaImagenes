@@ -28,7 +28,7 @@ export default async function Page() {
       <Alert>
         Esta página utiliza{" "}
         <strong>
-          <a href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#revalidating-data" target="_blank">Incremental Static Regenetarion(ISR).</a>
+          <a href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#revalidating-data" target="_blank" className="anchor">Incremental Static Regenetarion(ISR).</a>
         </strong>{" "}
         Una nueva imagen es generada cada 15 segundos después de refrescar la
         página, y luego es traída desde el caché durante esa duración.

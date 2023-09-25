@@ -3,3 +3,7 @@
     margin: 0.25rem;
     border-radius: 4px;
 }
+
+.anchor{
+    text-decoration: none;
+  }
