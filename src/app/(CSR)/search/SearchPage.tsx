@@ -70,7 +70,7 @@ function SearchPage() {
       {searchResults && (
         <>
           {searchResults.map((image) => (
-            <a href={image.urls.raw} target="_blank">
+            <a href={image.urls.raw}  key={image.urls.raw} target="_blank">
               <Image
                 src={image.urls.raw}
                 width={250}
@@ -80,7 +80,6 @@ function SearchPage() {
                     ? image.description
                     : "El autor no proporcionó una descripción de la imagen."
                 }
-                key={image.urls.raw}
                 className={styles.image}
               />
             </a>

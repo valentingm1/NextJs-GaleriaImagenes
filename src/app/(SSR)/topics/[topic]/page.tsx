@@ -49,7 +49,7 @@ export default async function Page({ params: { topic } }: PageProps) {
       </Alert>
       <h1 className={styles.title}>{topic}</h1>
       {images.map((image) => (
-        <a href={image.urls.raw} target="_blank">
+        <a href={image.urls.raw}  key={image.urls.raw} target="_blank">
           <Image
             src={image.urls.raw}
             width={250}
@@ -59,7 +59,6 @@ export default async function Page({ params: { topic } }: PageProps) {
                 ? image.description
                 : "El autor no proporcionó una descripción de la imagen."
             }
-            key={image.urls.raw}
             className={styles.image}
           />
         </a>
