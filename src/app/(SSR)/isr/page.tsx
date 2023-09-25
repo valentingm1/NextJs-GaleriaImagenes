@@ -29,6 +29,7 @@ export default async function Page() {
             Esta página utiliza <strong><a>Incremental Static Regenetarion(ISR).</a></strong> Una nueva imagen es generada cada 15 segundos después de refrescar la página, y luego es traída desde el caché durante esa duración.
             </Alert>
 
+            <a href={image.urls.raw} target="_blank">
             <Image
             src={image.urls.raw}
              width={width}
@@ -37,6 +38,7 @@ export default async function Page() {
 
              className="rounded shadow mw-100 h-100"
             />
+            </a>
             <p>Por <Link href={`/users/${image.user.username}`}>{image.user.username}</Link></p>
         </div>
     )

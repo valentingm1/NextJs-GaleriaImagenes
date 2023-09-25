@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {Navbar, Nav, Container} from "react-bootstrap"
+import {Navbar, Nav, Container, NavDropdown} from "react-bootstrap"
 import { usePathname } from "next/navigation"; 
 
 export default function Navegacion(){
@@ -19,6 +19,11 @@ export default function Navegacion(){
                         <Nav.Link as={Link} href="/static" active={pathname === "/static"}>Estático</Nav.Link>
                         <Nav.Link as={Link} href="/dynamic" active={pathname === "/dynamic"}>Estático</Nav.Link>
                         <Nav.Link as={Link} href="isr" active={pathname === "/isr"}>ISR</Nav.Link>
+                        <NavDropdown title="Topics" id="topics-dropdown">
+                            <NavDropdown.Item as={Link} href="/topics/cats">Cats</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/topics/food">Food</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/topics/sports">Sports</NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
