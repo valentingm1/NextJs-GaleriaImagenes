@@ -35,6 +35,7 @@ export default async function Page({ params: { topic } }: PageProps) {
           <a
             href="https://nextjs.org/docs/app/api-reference/functions/generate-static-params"
             target="_blank"
+            className={styles.anchor}
           >
             generateStaticParams
           </a>
