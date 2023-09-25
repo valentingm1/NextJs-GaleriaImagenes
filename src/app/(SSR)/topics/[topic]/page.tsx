@@ -45,6 +45,7 @@ export default async function Page({ params: { topic } }: PageProps) {
         traidas(fetch) y renderizadas la primera vez que entramos a la página, y
         luego son cacheadas para usarse en futuras peticiones(Esto se puede
         deshabilitar).
+        Podemos cambiar la última palabra de la url para cambiar el tópico de las fotos, por ejemplo "topics/mountains", lo que mostraría fotos de montañas.
       </Alert>
       <h1 className={styles.title}>{topic}</h1>
       {images.map((image) => (

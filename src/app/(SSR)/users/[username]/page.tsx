@@ -37,14 +37,14 @@ export default async function Page({params: {username}}: PageProps){
     return (
         <div>
             <Alert>
-            Esta página de perfil utiliza <strong><a href="https://nextjs.org/docs/app/api-reference/functions/generate-metadata#generatemetadata-function">generateMetadata</a></strong> para cambiar el título de la página de manera dinámica, según la respuesta de la API.
+            Esta página de perfil utiliza <strong><a href="https://nextjs.org/docs/app/api-reference/functions/generate-metadata#generatemetadata-function" target="_blank">generateMetadata</a></strong> para cambiar el título de la página de manera dinámica, según la respuesta de la API.
             </Alert>
             <h1>
                 {user.username}
             </h1>
             <p>Nombre: {user.first_name}</p>
             <p>Apellido: {user.last_name}</p>
-            <a href={"https://unsplash.com/" + user.username}>Perfil de Unsplash</a>
+            <a href={"https://unsplash.com/" + user.username} target="_blank">Perfil de Unsplash</a>
         </div>
     )
 

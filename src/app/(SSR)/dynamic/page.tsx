@@ -5,7 +5,7 @@ import { Alert } from "@/components/bootstrap";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Imágenes Dinámicas - Next 13.4 | Galería de Imágenes ",
+  title: "Imágenes Dinámicas - Next 13.4 | Galería de Imágenes",
 };
 
 //  export const revalidate = 0;

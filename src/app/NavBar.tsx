@@ -17,13 +17,14 @@ export default function Navegacion(){
                 <Navbar.Collapse id="main-navbar">
                     <Nav>
                         <Nav.Link as={Link} href="/static" active={pathname === "/static"}>Estático</Nav.Link>
-                        <Nav.Link as={Link} href="/dynamic" active={pathname === "/dynamic"}>Estático</Nav.Link>
-                        <Nav.Link as={Link} href="isr" active={pathname === "/isr"}>ISR</Nav.Link>
+                        <Nav.Link as={Link} href="/dynamic" active={pathname === "/dynamic"}>Dinámico</Nav.Link>
+                        <Nav.Link as={Link} href="/isr" active={pathname === "/isr"}>ISR</Nav.Link>
                         <NavDropdown title="Topics" id="topics-dropdown">
                             <NavDropdown.Item as={Link} href="/topics/cats">Cats</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/topics/food">Food</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/topics/sports">Sports</NavDropdown.Item>
                         </NavDropdown>
+                        <Nav.Link as={Link} href="/search" active={pathname === "/search"}>Búsqueda</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

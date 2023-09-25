@@ -5,7 +5,7 @@ import { Alert } from "@/components/bootstrap";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Imágenes Dinámicas - Next 13.4 | Galería de Imágenes ",
+  title: "Imágenes Dinámicas - Next 13.4 | Galería de Imágenes",
 };
 
 //  export const revalidate = 0;
@@ -28,7 +28,7 @@ export default async function Page() {
       <Alert>
         Esta página utiliza{" "}
         <strong>
-          <a>Incremental Static Regenetarion(ISR).</a>
+          <a href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration" target="_blank">Incremental Static Regenetarion(ISR).</a>
         </strong>{" "}
         Una nueva imagen es generada cada 15 segundos después de refrescar la
         página, y luego es traída desde el caché durante esa duración.
