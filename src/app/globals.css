@@ -27,7 +27,7 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-a {
+a{
   text-decoration: none;
 }
 

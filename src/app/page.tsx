@@ -10,11 +10,11 @@ export default async function Home() {
           características de <strong>NextJS 13</strong>, que incluyen:
         </p>
         <ul>
-          <li><a href="https://nextjs.org/docs/app/building-your-application/rendering/server-components" target="blank"></a>Static and dynamic server-side rendering</li>
-          <li><a href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#revalidating-data" target="blank"></a>Incremental static regeneration</li>
-          <li><a href="https://nextjs.org/docs/app/building-your-application/rendering/client-components" target="blank"></a>Client-side rendering</li>
-          <li><a href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers" target="blank"></a>Route handlers (API endpoints)</li>
-          <li><a href="https://nextjs.org/docs/app/building-your-application/optimizing/metadata" target="blank"></a>Meta-data API</li>
+          <li><a href="https://nextjs.org/docs/app/building-your-application/rendering/server-components" target="blank">Static and dynamic server-side rendering</a></li>
+          <li><a href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#revalidating-data" target="blank">Incremental static regeneration</a></li>
+          <li><a href="https://nextjs.org/docs/app/building-your-application/rendering/client-components" target="blank">Client-side rendering</a></li>
+          <li><a href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers" target="blank">Route handlers (API endpoints)</a></li>
+          <li><a href="https://nextjs.org/docs/app/building-your-application/optimizing/metadata" target="blank">Meta-data API</a></li>
         </ul>
         <p className="mb-0">
           Cada página usa un enfoque distinto para{" "}
