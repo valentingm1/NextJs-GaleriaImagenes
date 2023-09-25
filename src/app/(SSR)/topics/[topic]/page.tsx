@@ -1,4 +1,4 @@
-import { UnsplashImage } from "@/models/unsplashed-img";
+import { UnsplashImage } from "@/models/unsplash-img";
 import Image from "next/image";
 import styles from "./topic.module.css";
 import { Alert } from "@/components/bootstrap";
@@ -11,11 +11,10 @@ interface PageProps {
 
 // export const dynamicParams = false // Hace que no se puedan buscar otros topics, solamente los que quedaron precargados abajo en StaticParams
 
-
-export function generateMetadata({params: {topic}}: PageProps): Metadata {
-    return {
-        title: topic + " - Next 13.4 | Galería de Imágenes"
-    }
+export function generateMetadata({ params: { topic } }: PageProps): Metadata {
+  return {
+    title: topic + " - Next 13.4 | Galería de Imágenes",
+  };
 }
 
 export function generateStaticParams() {
@@ -33,7 +32,10 @@ export default async function Page({ params: { topic } }: PageProps) {
       <Alert>
         Esta página usa{" "}
         <strong>
-          <a href="https://nextjs.org/docs/app/api-reference/functions/generate-static-params" target="_blank">
+          <a
+            href="https://nextjs.org/docs/app/api-reference/functions/generate-static-params"
+            target="_blank"
+          >
             generateStaticParams
           </a>
         </strong>{" "}
@@ -48,19 +50,18 @@ export default async function Page({ params: { topic } }: PageProps) {
       {images.map((image) => (
         <a href={image.urls.raw} target="_blank">
           <Image
-          src={image.urls.raw}
-          width={250}
-          height={250}
-          alt={
-            image.description
-              ? image.description
-              : "El autor no proporcionó una descripción de la imagen."
-          }
-          key={image.urls.raw}
-          className={styles.image}
-        />  
+            src={image.urls.raw}
+            width={250}
+            height={250}
+            alt={
+              image.description
+                ? image.description
+                : "El autor no proporcionó una descripción de la imagen."
+            }
+            key={image.urls.raw}
+            className={styles.image}
+          />
         </a>
-        
       ))}
     </div>
   );
