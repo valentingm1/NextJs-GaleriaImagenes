@@ -25,7 +25,7 @@ export default async function Page() {
   return (
     <div className="d-flex flex-column align-items-center">
       <Alert>
-        Esta página <strong>trae datos de la API de manera dinámica.</strong>{" "}
+        Esta página <strong><a href="https://nextjs.org/docs/app/building-your-application/rendering/server-components#dynamic-rendering" target="blank">trae datos de la API de manera dinámica.</a></strong>{" "}
         Cada vez que refresques la página, la imagen va a cambiar.
       </Alert>
 

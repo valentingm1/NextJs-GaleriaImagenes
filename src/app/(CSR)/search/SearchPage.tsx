@@ -41,7 +41,7 @@ function SearchPage() {
     <div>
 
         <Alert>
-            Esta página trae los datos <strong><a href="https://nextjs.org/docs/pages/building-your-application/rendering/client-side-rendering" target="_blank">desde el lado del cliente.</a></strong> Para no filtrar las credenciales de la API, la petición se manda hacia un <a href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers" target="_blank"><strong>Route Handler</strong></a> que corre del lado del servidor. Este se encarga de traer la información de la API de Unsplash y luego la pasa hacia el cliente. 
+            Esta página trae los datos <strong><a href="https://nextjs.org/docs/app/building-your-application/rendering/client-components" target="_blank">desde el lado del cliente.</a></strong> Para no filtrar las credenciales de la API, la petición se manda hacia un <strong><a href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers" target="_blank">Route Handler</a></strong> que corre del lado del servidor. Este se encarga de traer la información de la API de Unsplash y luego la pasa hacia el cliente. 
         </Alert>
 
       <Form onSubmit={handleSubmit}>

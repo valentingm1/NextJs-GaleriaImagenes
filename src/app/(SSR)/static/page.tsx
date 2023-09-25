@@ -21,10 +21,10 @@ export default async function Page() {
     <div className="d-flex flex-column align-items-center">
       <Alert>
         Esta página{" "}
-        <strong>
+        <strong><a href="https://nextjs.org/docs/app/building-your-application/rendering/server-components#static-rendering-default" target="_blank">
           trae(fetch) datos desde una API y almacena en caché los datos al
           compilar.
-        </strong>{" "}
+        </a></strong>{" "}
         Aunque la API de Unsplash siempre devuelve una nueva imagen, vemos la
         misma imagen después de actualizar la página hasta que compilamos el
         proyecto nuevamente.
