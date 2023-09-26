@@ -17,9 +17,9 @@ export function generateMetadata({ params: { topic } }: PageProps): Metadata {
   };
 }
 
-export function generateStaticParams() {
+/* export function generateStaticParams() {
   return ["cats", "food", "sports"].map((topic) => ({ topic })); //Quedan esos 3 "topics" precargados
-}
+} */
 
 export default async function Page({ params: { topic } }: PageProps) {
   const res = await fetch(
